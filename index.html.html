@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Estilo.css">
+</head>
+
+<body>
+
+    <nav>
+        <img src="images/fondo.jpg" alt="Logo Mendix">
+        <a href="#que" onclick="mostrarSeccion('mendix')">¿Que es MENDIX?</a>
+        <a href="#low-code" onclick="mostrarSeccion('low-code')">¿Que es Low-code?</a>
+        <a href="#ventajas" onclick="mostrarSeccion('ventajas')">Ventajas para trabajar con MENDIX</a>
+        <a href="#casos" onclick="mostrarSeccion('casos')">Casos de usos de MENDIX</a>
+        <a href="#recursos" onclick="mostrarSeccion('recursos')">Recursos de aprendizaje</a>
+
+    </nav>
+
+    <hr>
+    <section id="mendix">
+        <h1>¿Que es MENDIX?</h1>
+        <P>
+            Mendix es una plataforma de desarrollo low-code (código bajo) habilitada para IA que permite a empresas crear,
+            desplegar y mantener aplicaciones empresariales web y móviles de forma más rápida y eficiente utilizando
+            herramientas visuales y componentes preconstruidos, en lugar de escribir código tradicional. Esta plataforma,
+            ahora parte de Siemens Digital Industries Software, acelera la transformación digital de las empresas al
+            facilitar la colaboración entre desarrolladores y expertos de negocio para entregar aplicaciones personalizadas
+            que se integran con sistemas existentes.
+        </P>
+    </section>
+
+    <hr>
+    <section id="low-code">
+        <h1>¿Que es Low-code?</h1>
+        <p>
+            Low-code es un enfoque de desarrollo de software que permite crear aplicaciones mediante interfaces gráficas
+            y configuraciones en lugar de escribir código manualmente. Utiliza herramientas visuales, como arrastrar y
+            soltar componentes, para acelerar el proceso de desarrollo, facilitando la colaboración entre desarrolladores
+            y expertos de negocio. Esto reduce la necesidad de conocimientos técnicos profundos, permitiendo a una gama
+            más amplia de personas contribuir al desarrollo de aplicaciones, lo que resulta en una entrega más rápida y
+            eficiente de soluciones digitales.
+        </p>
+    </section>
+
+    <hr>
+
+    <section id="ventajas">
+        <h1>Ventajas de trabajar con MENDIX</h1>
+        <p>
+            Las ventajas de trabajar con Mendix, una plataforma low-code, incluyen mayor velocidad en el desarrollo de
+            aplicaciones, la capacidad de crear soluciones con o sin codificación intensiva, una colaboración más estrecha
+            entre los equipos de TI y de negocio, y la facilidad para integrar datos de diversas fuentes. Además, permite a
+            los usuarios no técnicos aportar valor en el desarrollo, reduce costos y riesgos, y facilita la adaptación a los
+            cambios del mercado.
+         </p>
+
+    </section>
+    
+    <hr>
+    <section id="casos">
+        <h1>Casos de Éxito de MENDIX</h1>
+        <P>
+            Mendix ha sido implementado exitosamente por empresas líderes a nivel mundial, transformando sus procesos 
+            digitales y optimizando sus operaciones comerciales. Estas organizaciones han logrado acelerar su 
+            time-to-market, mejorar significativamente la experiencia del usuario final, reducir costos operativos 
+            y aumentar su eficiencia organizacional mediante la implementación de soluciones low-code personalizadas 
+            que se integran perfectamente con sus sistemas empresariales existentes.
+        </P>
+        <ol>
+            <li><a href="https://www.mendix.com/customers/siemens/">Siemens - Automatización Industrial</a></li>
+            <li><a href="https://www.mendix.com/customers/enexis/">Enexis - Gestión de Servicios Energéticos</a></li>
+            <li><a href="https://www.mendix.com/customers/pwc/">PwC - Consultoría y Auditoría Digital</a></li>
+            <li><a href="https://www.mendix.com/customers/careervalue/">CareerValue - Plataforma de Recursos Humanos</a></li>
+            <li><a href="https://www.mendix.com/customers/jobbird/">Jobbird - Soluciones de Reclutamiento</a></li>
+            <li><a href="https://www.mendix.com/customers/philips/">Philips - Innovación en Healthcare</a></li>
+            <li><a href="https://www.mendix.com/customers/abb/">ABB - Tecnología Industrial</a></li>
+            <li><a href="https://www.mendix.com/customers/zurich/">Zurich Insurance - Seguros Digitales</a></li>
+        </ol>
+    </section>
+
+    <hr>
+
+    <section id="recursos">
+        <h1>Recursos de aprendizaje</h1>
+        <p>
+            Los principales recursos para aprender Mendix incluyen la plataforma de aprendizaje en línea Mendix Academy, con
+            cursos, aprendizaje práctico y certificaciones, y la comunidad de usuarios que ofrece soporte a través de foros
+            y el Mendix Marketplace, donde se pueden descargar extensiones. Además, la documentación oficial, el soporte
+            24/7, y la guía de Maia Chat (una IA entrenada en la documentación) son recursos valiosos para aprender y
+            obtener ayuda contextualizada en tus proyectos.
+        </p>
+
+        <a href="https://academy.mendix.com/">Mendix Academy</a>
+
+        <p>Otros recursos de aprendizajes son:</p>
+
+        <ul>
+            <li><a href="https://docs.mendix.com/">Documentación Oficial de Mendix</a></li>
+            <li><a href="https://marketplace.mendix.com/">Mendix Marketplace</a></li>
+            <li><a href="https://community.mendix.com/">Comunidad Mendix</a></li>
+            <li><a href="https://www.mendix.com/blog/">Blog Oficial de Mendix</a></li>
+            <li><a href="https://gettingstarted.mendixcloud.com/">Mendix Getting Started Guide</a></li>
+            <li><a href="https://www.youtube.com/mendix">Canal de YouTube de Mendix</a></li>
+            <li><a href="https://www.mendix.com/training/">Programas de Entrenamiento</a></li>
+            <li><a href="https://www.mendix.com/evaluation-guide/">Guía de Evaluación</a></li>
+        </ul>
+    </section>
+
+    <script>
+        function mostrarSeccion(id){
+            document.querySelectorAll('section').forEach(sec => sec.classList.remove("active"));
+            document.getElementById(id).classList.add("active");
+        }
+    </script>
+
+ <footer>
+        <hr>
+        <p>Desarrollador: [Arturo Israel Martínez Córdova]</p>
+        <p>Email: [cordovarturo51@gmail.com]</p>
+        <p>Fecha de creación: Septiembre 2025</p>
+        <p>En una relación estable con Yareli Fajardo Ramírez</p>
+    </footer>
+</body>
+</html>
+
+</body>
+
+</html>
